@@ -353,6 +353,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/CameraFollow.cs"
 "Assets/Scripts/InputManager.cs"
+"Assets/Scripts/Missile.cs"
+"Assets/Scripts/MissileFire.cs"
 "Assets/Scripts/Move.cs"
 "Assets/Scripts/Rotor.cs"
 -langversion:9.0

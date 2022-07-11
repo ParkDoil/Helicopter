@@ -33,12 +33,12 @@ public class Move : MonoBehaviour
             // 전진할경우
             if (_input.isMove)
             {
-                UpDownSpeed = 0.000001f;
+                UpDownSpeed = 0.3f;
                 MoveDir = new Vector3(0f, 0f, MoveSpeed);
             }
 
             // 안누르고 있으면 제자리 체공
-            if (_input.Y == 0)
+            if (_input.Y == 0 && false == _input.isMove)
             {
                 _rigid.velocity = Vector3.zero;
             }

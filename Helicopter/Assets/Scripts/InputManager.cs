@@ -10,6 +10,7 @@ public class InputManager : MonoBehaviour
     public float Y { get; private set; }
     public bool isEngineStart { get; private set; }
     public bool isMove { get; private set; }
+    public bool isFire { get; private set; }
 
     void Update()
     {
@@ -17,6 +18,7 @@ public class InputManager : MonoBehaviour
         Y = 0f;
         isEngineStart = false;
         isMove = false;
+        isFire = false;
 
         X = Input.GetAxis("Horizontal");
         Y = Input.GetAxis("Vertical");
@@ -25,5 +27,7 @@ public class InputManager : MonoBehaviour
         isEngineStart = Input.GetKeyDown(KeyCode.R);
 
         isMove = Input.GetKey(KeyCode.Keypad8);
+
+        isFire = Input.GetKeyDown(KeyCode.Space);
     }
 }
