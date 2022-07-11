@@ -9,16 +9,21 @@ public class InputManager : MonoBehaviour
     // À§ ¾Æ·¡
     public float Y { get; private set; }
     public bool isEngineStart { get; private set; }
+    public bool isMove { get; private set; }
 
     void Update()
     {
         X = 0f;
         Y = 0f;
         isEngineStart = false;
+        isMove = false;
 
         X = Input.GetAxis("Horizontal");
         Y = Input.GetAxis("Vertical");
-        
-        isEngineStart = Input.GetKey(KeyCode.R);
+
+
+        isEngineStart = Input.GetKeyDown(KeyCode.R);
+
+        isMove = Input.GetKey(KeyCode.Keypad8);
     }
 }
