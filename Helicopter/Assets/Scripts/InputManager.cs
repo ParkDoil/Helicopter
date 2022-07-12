@@ -26,7 +26,7 @@ public class InputManager : MonoBehaviour
 
         isEngineStart = Input.GetKeyDown(KeyCode.R);
 
-        isMove = Input.GetKey(KeyCode.Keypad8);
+        isMove = Input.GetKey(KeyCode.Q);
 
         isFire = Input.GetKeyDown(KeyCode.Space);
     }

@@ -33,6 +33,8 @@ public class Move : MonoBehaviour
             // 전진할경우
             if (_input.isMove)
             {
+
+
                 UpDownSpeed = 0.3f;
                 MoveDir = new Vector3(0f, 0f, MoveSpeed);
             }
@@ -55,7 +57,7 @@ public class Move : MonoBehaviour
             }
 
             MoveDir = transform.TransformDirection(MoveDir);
-            _rigid.AddForce(MoveDir);
+            _rigid.AddForce(MoveDir, ForceMode.Force);
         }
     }
 }
